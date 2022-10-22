@@ -1,0 +1,40 @@
+@import _variables
+@import _mixins
+
+body
+    background: $fondo
+
+h1
+    text-align: center
+    font-family: Arial, Helvetica, sans-serif
+    transform: translatey(40px)
+
+.container
+    display: flex
+    justify-content: center
+    align-items: center
+    height: calc( 100vh - 88px )
+    .item1
+        transition: .5s
+        overflow: hidden
+        margin: 0 20px
+        +bordeRedondeado($radio:20px )
+        &:hover
+            cursor: pointer
+            transform: scale(1.2) 
+            transform: translateY(-20px)
+
+.img-1-1
+    width: 200px
+    object-fit: cover
+    aspect-ratio: 1/1 
+
+.img-9-16
+    width: 200px
+    object-fit: cover
+    aspect-ratio: 9/16
+
+.img-16-9
+    width: 200px
+    object-fit: cover
+    aspect-ratio: 16/9
